@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio Pessoal</title>
+  <style>
+    body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #60cdd4;
+  color: rgb(49, 37, 77);
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  background-color: #5f9bd3; /* edição bem vindo ao meu site */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 28px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: inline-block;
+  margin: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+header h1:hover {
+  transform: scale(1.05);
+}
+
+nav a {
+  display: inline-block;
+  width: 140px;           /* Tamanho fixo para todos os botões */
+  padding: 10px 15px;
+  margin: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #0096c7;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+nav a:hover {
+  text-decoration: none;
+  background-color: #0077b6;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo das seções */
+section {
+  padding: 30px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+h2 {
+  background-color: #0096c7;
+  color: white;
+  padding: 10px 15px;
+  width: 140px; /* mesmo tamanho que os links */
+  text-align: center;
+  border-radius: 25px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#sobre,
+#formacao,
+#portfolio,
+#contato {
+  background-color: #ffe4ec; 
+}
+
+
+
+/* Formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005f87;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0077b6;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio</h1>
+    <nav>
+      <!-- Links para seções da página -->
+      <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Alecsandro Rodrigues de Almeida é um profissional brasileiro de 27 anos, residente em Guarulhos (SP), com forte interesse nas áreas de educação, tecnologia e história. Atualmente cursa Análise e Desenvolvimento de Sistemas e possui uma trajetória diversa, que inclui formação técnica em Informática, curso de auxiliar de enfermagem e experiências na área de vendas em um hortifruti.
+      Anteriormente, iniciou uma Licenciatura em História, reforçando seu interesse por conhecimento, leitura e pesquisa, e também participou de cursos de extensão voltados à literatura infantil e contação de histórias. Sua formação combina habilidades humanas e técnicas, demonstrando versatilidade e uma busca constante por crescimento pessoal e profissional.
+      Alecsandro se mostra uma pessoa dedicada, curiosa, com disposição para aprender e se reinventar profissionalmente, buscando oportunidades que unam seus interesses pessoais com estabilidade e crescimento no mercado de trabalho, gosta quando não está trabalhando de sair, ler livros e assistir filmes.
+  </p>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação e Idiomas</h2>
+    <br> Técnico em Informática.
+       <br>Curso técnico de auxiliar de enfermagem.
+       <br>Curso Nível Básico Empreeendedorismo.
+       <br>Licenciatura em Historia - incompleto.
+       <br>Analise de desenvolvimento de sistema - Cursando. 
+    
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfólio</h2>
+    <ul>
+      <li><a href="https://github.com/alecsandroinf" target="_blank">Github</a></li>
+      
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <!-- Formulário visual, não envia dados sem backend -->
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alecsandro</p>
+  </footer>
+</body>
+</html>
