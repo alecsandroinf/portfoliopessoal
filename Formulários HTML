@@ -1,0 +1,53 @@
+#práticas de formulários 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="POST">
+
+        
+
+<br><br>
+#fommulário para cadastro
+<label for="nome">Nome:</label>
+<input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50">
+<br>
+<label for="senha">Senha:</label>
+   <input type="text" type="password" name="senha" size="8" maxlength="8">
+   <br><br><br>
+ #formulario para selecionar mais de uma opção
+   <fieldset>
+    <label for="linguagem">Linguagem que tem interesse</label>
+    <br><br>
+
+    <input type="checkbox" name="linguagem[]" value="C++">C++
+
+    <input type="checkbox" name="linguagem[]" value="php">php
+
+    <input type="checkbox" name="linguagem[]" value="php">Delphi
+
+   </fieldset>
+  #formulario para escolher apenas uma opção
+   <label for="linguagemescolhida">Linguagem que irá cursar agora</label>
+   <br><br>
+   <!----->
+#formulario para selecionar em caixa 
+<input type="radio" name="curso" value="C++">C++
+<input type="radio" name="curso" value="php">php
+<input type="radio" name="curso" value="Delphi">Delphi 
+<br><br>
+<select name ="escola">
+<option value="C++">C++</option>   
+<option value="PHP">PHP</option>   
+<option value="DELPHI">DELPHI</option>   
+</select>
+<br><br>
+#codigo para criar caixa 
+<input name="Submit" type="submit" id="submit" value="Enviar">
+    </form>
+</body>
+</html>
