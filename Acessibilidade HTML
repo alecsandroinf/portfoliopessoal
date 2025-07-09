@@ -1,0 +1,34 @@
+#caption > título da tabela 
+#Summary > descrever o objetivo da tabela
+#<thead> para os cabeçalhos da tabela
+#<tfoot> para o rodapé da tabela
+#<tbody> para o corpo da tabela 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade</title>
+</head>
+<body>
+    <table border="1"sumary= "Tabela com preços em reais de ameixa preta e pera">
+        <caption>Preços em reais de ameixa e pera em são paulo</caption>
+<tr>
+    <td> </td>
+        <th>Ameixa Preta</th>
+        <th>Pera</th>
+</tr>        
+<tr>
+    <th>Atacado</th>
+    <td>1,00</td>
+    <td>1,50</td>
+</tr>
+<tr>
+    <th>Varejo</th>
+    <th>2,00</th>
+    <td>2,50</td>
+</tr>
+    </table>
+</body>
+</html>
