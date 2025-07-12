@@ -1,0 +1,37 @@
+#operadores
+#estruturas de controle
+#loops
+
+#Elaboração de um algoritmo que leia o sexo de uma pessoa 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //leitura do sexo digitado pelo usuário 
+        var sexo= prompt("Digite o seu sexo (M ou F)");
+        var sexo=sexo.toUpperCase();
+
+
+        //verificar se é válido
+        if (sexo== "M" || sexo== "F") {
+            //se for válido, exibir mensagem
+            if (sexo == "M") {
+                alert("Sexo Masculino");
+            } else {
+                alert("Sexo Feminino");
+            }
+        } else {
+            //se não for válido, exibir mensagem de erro
+            alert("Sexo inválido. Por favor, digite M ou F.");              
+        }
+
+    </script>
+</body>
+</html>
