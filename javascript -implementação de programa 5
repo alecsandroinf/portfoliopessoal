@@ -1,0 +1,52 @@
+#LOCALSTORAGE
+
+  #solicitar que o usuário digite uma lista de tarefas,mostrar na tela,na mesma página,as tarefas digitadas.
+
+  <!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <h1>Lista de tarefas</h1>
+
+
+    <form>
+
+
+        <label for="tarefa">Adicionar Tarefa:</label>
+
+        <input type="text" id="tarefa" name="tarefa">
+
+        <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+
+    </form>
+
+    <ul id="lista-de-tarefas"></ul>
+    <script>
+        function adicionarTarefa() {
+            //captura o campo texto e o elemento <ul> na página
+            let campoTarefa = document.getElementById("tarefa");
+            let listaDeTarefas = document.getElementById("lista-de-tarefas");
+
+            // criar um novo item <li> com o texto da tarefa e adicionar à lista 
+            let novaTarefa = document.createElement("li");
+            novaTarefa.textContent = campoTarefa.value;
+            listaDeTarefas.appendChild(novaTarefa);
+            //limpar o campo de texto
+            campoTarefa.value = "";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
+  
